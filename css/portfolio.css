@@ -83,9 +83,26 @@ button {
 
 .container {
   margin: 0 auto;
-  width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
+}
+
+@media screen and (min-width: 480px) {
+  .container {
+    width: 480px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1200px;
+  }
 }
 
 .title {
@@ -117,10 +134,17 @@ button {
 
 .logo {
   font-family: "Raleway", sans-serif;
-  font-size: 26px;
+  font-size: 24px;
   font-weight: 700;
-  line-height: 1.19;
+  line-height: 1.17;
   text-decoration: none;
+}
+
+@media screen and (min-width: 1200px) {
+  .logo {
+    font-size: 26px;
+    line-height: 1.19;
+  }
 }
 
 .page-header__logo {
@@ -132,8 +156,6 @@ button {
 }
 
 .page-footer__logo {
-  display: block;
-  margin-bottom: 20px;
   color: #ffffff;
 }
 
@@ -155,11 +177,29 @@ button {
           align-items: center;
 }
 
+@media screen and (max-width: 767px) {
+  .header-nav {
+    padding: 16px 331px 16px 15px;
+  }
+}
+
 .main-nav__list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-left: 93px;
+  margin-left: 88px;
+}
+
+@media screen and (max-width: 767px) {
+  .main-nav__list {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .main-nav__list {
+    margin-left: 93px;
+  }
 }
 
 .main-nav__item + .main-nav__item {
@@ -200,21 +240,35 @@ button {
 }
 
 .contact-nav__list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin-left: auto;
+  margin-left: 84px;
 }
 
-.contact-nav__item + .contact-nav__item {
-  margin-left: 50px;
+@media screen and (max-width: 767px) {
+  .contact-nav__list {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .contact-nav__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-left: auto;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .contact-nav__item + .contact-nav__item {
+    margin-left: 50px;
+  }
 }
 
 .contact-nav__link {
   color: #757575;
   font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
+  font-size: 12px;
+  line-height: 1.17;
   letter-spacing: 0.02em;
   -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -224,8 +278,21 @@ button {
   color: #2196f3;
 }
 
+@media screen and (min-width: 1200px) {
+  .contact-nav__link {
+    font-size: 14px;
+    line-height: 1.17;
+  }
+}
+
 .contact-nav__icon {
-  margin-right: 10px;
+  margin-right: 8px;
+}
+
+@media screen and (min-width: 1200px) {
+  .contact-nav__icon {
+    margin-right: 10px;
+  }
 }
 
 .projects-lists {

@@ -4,12 +4,25 @@
 
 .header-nav {
   @include flex;
+
+  @media screen and (max-width: 767px) {
+    padding: 16px 331px 16px 15px;
+  }
 }
 
 .main-nav__list {
   @extend %list;
   display: flex;
-  margin-left: 93px;
+  margin-left: 88px;
+  // margin-left: 93px;
+
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-left: 93px;
+  }
 }
 
 .main-nav__item {
@@ -55,13 +68,23 @@
 
 .contact-nav__list {
   @extend %list;
-  display: flex;
-  margin-left: auto;
+  // display: flex;
+  margin-left: 84px;
+  // margin-left: auto;
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    margin-left: auto;
+  }
 }
 
 .contact-nav__item {
-  & + & {
-    margin-left: 50px;
+  @media screen and (min-width: 1200px) {
+    & + & {
+      margin-left: 50px;
+    }
   }
 }
 
@@ -69,8 +92,10 @@
   @extend %link;
   color: $secondaryTextColor;
   font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
+  // font-size: 14px;
+  font-size: 12px;
+  line-height: 1.17;
+  // line-height: 1.14;
   letter-spacing: 0.02em;
   transition: color $timingFunction;
 
@@ -78,9 +103,18 @@
   &:focus {
     color: $accentColor;
   }
+
+  @media screen and (min-width: 1200px) {
+    font-size: 14px;
+    line-height: 1.17;
+  }
 }
 
 .contact-nav__icon {
   @extend %icon;
-  margin-right: 10px;
+  // margin-right: 10px;
+  margin-right: 8px;
+  @media screen and (min-width: 1200px) {
+    margin-right: 10px;
+  }
 }
