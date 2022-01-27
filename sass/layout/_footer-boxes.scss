@@ -1,0 +1,76 @@
+.address-box {
+  width: 231px;
+}
+
+.address-box__text {
+  margin-bottom: 9px;
+
+  color: $backgroundColor;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.71;
+}
+
+.address-box__link {
+  @extend %link;
+  display: block;
+  margin-bottom: 9px;
+
+  color: rgba(255, 255, 255, 0.6);
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.71;
+
+  transition: color $timingFunction;
+
+  &:last-child {
+    margin-bottom: 0;
+    transition: color $timingFunction;
+  }
+
+  &:hover,
+  &:focus {
+    color: $accentColor;
+  }
+}
+
+.social-links__box {
+  width: 206px;
+  margin-top: 12px;
+  margin-left: 70px;
+}
+
+.social-links__title {
+  margin-bottom: 20px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: $backgroundColor;
+}
+
+.social-links-footer {
+  @extend %list;
+  @include flex;
+  justify-content: space-between;
+  width: 206px;
+  height: 44px;
+}
+
+.social-links-footer__link {
+  @extend %link;
+  @include centeredFlex;
+
+  width: 44px;
+  height: 44px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  color: $backgroundColor;
+  transition: background-color $timingFunction;
+
+  &:hover,
+  &:focus {
+    background-color: $accentColor;
+  }
+}

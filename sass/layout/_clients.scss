@@ -1,0 +1,23 @@
+.clients-list {
+  @extend %list;
+  display: flex;
+  justify-content: space-between;
+}
+
+.clients-list__link {
+  @extend %link;
+  @include centeredFlex;
+
+  width: 170px;
+  height: 92px;
+  border: 1px solid $iconColor;
+  border-radius: 4px;
+  color: $iconColor;
+  transition: color $timingFunction, border $timingFunction;
+
+  &:hover,
+  &:focus {
+    color: $accentColor;
+    border: 1px solid $accentColor;
+  }
+}

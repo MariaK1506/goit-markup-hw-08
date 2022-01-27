@@ -1,0 +1,10 @@
+body {
+  background-color: $backgroundColor;
+  color: $primaryTextColor;
+  font-family: $primaryFontFamily;
+  letter-spacing: 0.03em;
+}
+
+.icon {
+  fill: currentColor;
+}
