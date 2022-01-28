@@ -130,6 +130,7 @@ button {
 
 .page-header {
   border-bottom: 1px solid #ececec;
+  position: relative;
 }
 
 .logo {
@@ -175,11 +176,16 @@ button {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width) {
   .header-nav {
-    padding: 16px 331px 16px 15px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    padding-left: 15px;
   }
 }
 
@@ -293,6 +299,28 @@ button {
   .contact-nav__icon {
     margin-right: 10px;
   }
+}
+
+.menu-button {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  margin: 0;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+}
+
+.icon-cross {
+  display: none;
+}
+
+.is-open .icon-cross {
+  display: block;
+}
+
+.is-open .icon-menuburger {
+  display: none;
 }
 
 .projects-lists {
