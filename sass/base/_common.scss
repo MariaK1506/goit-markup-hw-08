@@ -3,6 +3,10 @@ body {
   color: $primaryTextColor;
   font-family: $primaryFontFamily;
   letter-spacing: 0.03em;
+
+  &.modal-open {
+    overflow: hidden;
+  }
 }
 
 .icon {

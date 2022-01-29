@@ -7,8 +7,9 @@
   // position: absolute;
   justify-content: space-between;
 
-  @media screen and (max-width) {
+  @media screen and (max-width: 767px) {
     // padding: 16px 331px 16px 15px;
+
     padding-top: 16px;
     padding-bottom: 16px;
     padding-left: 15px;
@@ -18,12 +19,13 @@
 .main-nav__list {
   @extend %list;
   display: flex;
+  // position: absolute;
   margin-left: 88px;
   // margin-left: 93px;
 
-  @media screen and (max-width: 767px) {
-    display: none;
-  }
+  // @media screen and (max-width: 767px) {
+  //   display: none;
+  // }
 
   @media screen and (min-width: 1200px) {
     margin-left: 93px;
@@ -73,12 +75,13 @@
 
 .contact-nav__list {
   @extend %list;
+  // position: absolute;
   // display: flex;
   margin-left: 84px;
   // margin-left: auto;
-  @media screen and (max-width: 767px) {
-    display: none;
-  }
+  // @media screen and (max-width: 767px) {
+  //   display: none;
+  // }
   @media screen and (min-width: 1200px) {
     display: flex;
     margin-left: auto;

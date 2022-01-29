@@ -5,9 +5,15 @@
 
   width: 100vw;
   height: 100vh;
+  padding: 93px 15px;
   background-color: rgba(0, 0, 0, 0.2);
   opacity: 1;
   transition: opacity $timingFunction, visibility $timingFunction;
+  overflow-y: scroll;
+
+  // @media screen and (min-width: 768px) {
+  //   padding: 208px 159px;
+  // }
 }
 
 .is-hidden {
