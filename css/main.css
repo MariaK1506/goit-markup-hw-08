@@ -183,6 +183,12 @@ button {
   margin-left: 88px;
 }
 
+@media screen and (max-width: 767px) {
+  .main-nav__list {
+    display: none;
+  }
+}
+
 @media screen and (min-width: 1200px) {
   .main-nav__list {
     margin-left: 93px;
@@ -228,6 +234,12 @@ button {
 
 .contact-nav__list {
   margin-left: 84px;
+}
+
+@media screen and (max-width: 767px) {
+  .contact-nav__list {
+    display: none;
+  }
 }
 
 @media screen and (min-width: 1200px) {
