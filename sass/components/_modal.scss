@@ -1,5 +1,5 @@
 .modal {
-  // position: absolute;
+  position: absolute;
   // top: 50%;
   // left: 50%;
   // transform: translate(-50%, -50%) scale(1);
@@ -31,7 +31,7 @@
 .modal-btn {
   @include centeredFlex;
   cursor: pointer;
-  // position: absolute;
+  position: absolute;
 
   top: 8px;
   right: 8px;

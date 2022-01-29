@@ -749,6 +749,7 @@ button {
 }
 
 .modal {
+  position: absolute;
   padding: 40px;
   width: 450px;
   height: 609px;
@@ -789,6 +790,7 @@ button {
       -ms-flex-align: center;
           align-items: center;
   cursor: pointer;
+  position: absolute;
   top: 8px;
   right: 8px;
   width: 30px;
