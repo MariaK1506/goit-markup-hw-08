@@ -36,6 +36,7 @@
 
 .main-nav__item {
   @media screen and (max-width: 767px) {
+    margin-bottom: 32px;
     &:last-child {
       margin-bottom: 302px;
     }
@@ -99,6 +100,7 @@
     display: flex;
     flex-direction: column-reverse;
     align-items: flex-start;
+    margin-bottom: 64px;
   }
 
   @media screen and (min-width: 768px) {
@@ -112,8 +114,8 @@
 }
 
 .contact-nav__item {
-  &:not(:last-child) {
-    margin-bottom: 10px;
+  &:last-child {
+    margin-bottom: 32px;
   }
 
   @media screen and (min-width: 1200px) {
@@ -125,6 +127,13 @@
 
 .contact-nav__link {
   @extend %link;
+  // @media screen and (max-width: 767px) {
+  //   &:not(:last-child) {
+  //     margin-bottom: 32px;
+  //     display: block;
+  //   }
+  // }
+
   color: $secondaryTextColor;
   font-weight: 500;
   font-size: 24px;
@@ -221,3 +230,65 @@
     }
   }
 }
+
+.social-nav__list {
+  @extend %list;
+
+  @media screen and (max-width: 767px) {
+    width: 356px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+}
+
+.social-nav__link {
+  @extend %link;
+  width: 85px;
+  height: 22px;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.22;
+  letter-spacing: 0.02em;
+  color: $accentColor;
+}
+
+// .social-nav__link {
+//   &:not(:last-child) {
+//     &::after {
+//       content: "";
+//       width: 22px;
+//       height: 0px;
+//       // background-color: #303030;
+//       margin-right: 10px;
+//       margin-left: 10px;
+//       border: 1px solid rgba(33, 33, 33, 0.2);
+//       transform: rotate(90deg);
+//     }
+//   }
+// }
+
+.social-nav__link::before {
+  content: "";
+  width: 22px;
+  height: 0px;
+  // background-color: #303030;
+  margin-right: 10px;
+  margin-left: 10px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  transform: rotate(90deg);
+}
+
+// .social-nav__link:not(:last-child):after {
+//   content: "";
+//   width: 22px;
+//   height: 0px;
+//   // background-color: #303030;
+//   margin-right: 10px;
+//   margin-left: 10px;
+//   border: 1px solid rgba(33, 33, 33, 0.2);
+//   transform: rotate(90deg);
+// }

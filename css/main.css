@@ -1,10 +1,10 @@
-.main-nav__list, .contact-nav__list, .features-list, .work-list, .team-list, .social-links, .clients-list, .social-links-footer {
+.main-nav__list, .contact-nav__list, .social-nav__list, .features-list, .work-list, .team-list, .social-links, .clients-list, .social-links-footer {
   padding: 0;
   margin: 0;
   list-style: none;
 }
 
-.main-nav__link, .contact-nav__link, .social-links__link, .clients-list__link, .address-box__link, .social-links-footer__link, .checkbox__link {
+.main-nav__link, .contact-nav__link, .social-nav__link, .social-links__link, .clients-list__link, .address-box__link, .social-links-footer__link, .checkbox__link {
   text-decoration: none;
 }
 
@@ -216,6 +216,9 @@ button {
 }
 
 @media screen and (max-width: 767px) {
+  .main-nav__item {
+    margin-bottom: 32px;
+  }
   .main-nav__item:last-child {
     margin-bottom: 302px;
   }
@@ -283,6 +286,7 @@ button {
     -webkit-box-align: start;
         -ms-flex-align: start;
             align-items: flex-start;
+    margin-bottom: 64px;
   }
 }
 
@@ -301,8 +305,8 @@ button {
   }
 }
 
-.contact-nav__item:not(:last-child) {
-  margin-bottom: 10px;
+.contact-nav__item:last-child {
+  margin-bottom: 32px;
 }
 
 @media screen and (min-width: 1200px) {
@@ -422,6 +426,48 @@ button {
   }
 }
 
+@media screen and (max-width: 767px) {
+  .social-nav__list {
+    width: 356px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .social-nav__list {
+    display: none;
+  }
+}
+
+.social-nav__link {
+  width: 85px;
+  height: 22px;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.22;
+  letter-spacing: 0.02em;
+  color: #2196f3;
+}
+
+.social-nav__link::before {
+  content: "";
+  width: 22px;
+  height: 0px;
+  margin-right: 10px;
+  margin-left: 10px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+}
+
 .hero {
   background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../images/hero.jpg");
   background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero.jpg");
@@ -517,6 +563,9 @@ button {
 @media screen and (max-width: 767px) {
   .features-list__item {
     width: 450px;
+  }
+  .features-list__item:not(:last-child) {
+    margin-bottom: 30px;
   }
 }
 
