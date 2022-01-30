@@ -1,19 +1,24 @@
 .projects-cards {
   @extend %list;
 
-  display: flex;
-  flex-wrap: wrap;
-  margin: -15px;
+  // display: flex;
+  // flex-wrap: wrap;
+  // margin: -15px;
 
   background-color: $backgroundColor;
 }
 
 .projects-cards__link {
   @extend %link;
+  @media screen and (max-width: 767px) {
+    &:not(:last-child) {
+      margin-bottom: 30px;
+    }
+  }
 
   display: block;
   width: 370px;
-  margin: 15px;
+  // margin: 15px;
   transition: box-shadow $timingFunction;
 
   &:hover,

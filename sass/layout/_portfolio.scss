@@ -1,8 +1,15 @@
 .projects-lists {
   @extend %list;
-  @include centeredFlex;
 
-  margin-bottom: 50px;
+  @media screen and (max-width: 767px) {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -4px;
+    margin-bottom: 40px;
+  }
+  // @include centeredFlex;
+
+  // margin-bottom: 50px;
 }
 
 .projects-lists__button {
@@ -38,9 +45,13 @@
 }
 
 .projects-lists__item {
-  margin-left: 8px;
-
-  &:nth-child(1) {
-    margin-left: 0;
+  @media screen and (max-width: 767px) {
+    margin: 4px;
   }
+
+  margin: 8px;
+
+  // &:nth-child(1) {
+  //   margin-left: 0;
+  // }
 }

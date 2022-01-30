@@ -508,17 +508,16 @@ button {
           transform: rotate(90deg);
 }
 
-.projects-lists {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  margin-bottom: 50px;
+@media screen and (max-width: 767px) {
+  .projects-lists {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin: -4px;
+    margin-bottom: 40px;
+  }
 }
 
 .projects-lists__button {
@@ -554,31 +553,32 @@ button {
 }
 
 .projects-lists__item {
-  margin-left: 8px;
+  margin: 8px;
 }
 
-.projects-lists__item:nth-child(1) {
-  margin-left: 0;
+@media screen and (max-width: 767px) {
+  .projects-lists__item {
+    margin: 4px;
+  }
 }
 
 .projects-cards {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  margin: -15px;
   background-color: #ffffff;
 }
 
 .projects-cards__link {
   display: block;
   width: 370px;
-  margin: 15px;
   -webkit-transition: -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@media screen and (max-width: 767px) {
+  .projects-cards__link:not(:last-child) {
+    margin-bottom: 30px;
+  }
 }
 
 .projects-cards__link:hover, .projects-cards__link:focus {
