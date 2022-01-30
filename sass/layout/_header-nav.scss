@@ -177,6 +177,11 @@
   @media screen and (min-width: 768px) {
     display: none;
   }
+
+  &:hover .icon-cross,
+  &:focus .icon-menuburger {
+    fill: $accentColor;
+  }
 }
 
 .icon-cross {

@@ -22,7 +22,12 @@
 }
 
 .page-footer__logo {
-  // display: block;
-  // margin-bottom: 20px;
   color: $backgroundColor;
+
+  @media screen and (max-width: 767px) {
+    display: block;
+    margin-right: 163px;
+    margin-left: 163px;
+    margin-bottom: 20px;
+  }
 }

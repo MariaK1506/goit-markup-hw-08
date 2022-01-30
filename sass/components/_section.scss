@@ -7,15 +7,30 @@
   font-size: 36px;
   line-height: 1.17;
   text-align: center;
+
+  @media screen and (max-width: 767px) {
+    margin-bottom: 30px;
+    font-size: 28px;
+    line-height: 1.18;
+    letter-spacing: 0.03em;
+  }
 }
 
 .section {
   padding-top: 94px;
   padding-bottom: 94px;
+
+  @media screen and (max-width: 767px) {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
 }
 
 .section.no-padding {
   padding-top: 0;
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
 }
 
 .section-team {

@@ -1,7 +1,13 @@
 .clients-list {
   @extend %list;
-  display: flex;
-  justify-content: space-between;
+
+  @media screen and (max-width: 767px) {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -15px;
+  }
+
+  // justify-content: space-between;
 }
 
 .clients-list__link {
@@ -14,6 +20,12 @@
   border-radius: 4px;
   color: $iconColor;
   transition: color $timingFunction, border $timingFunction;
+
+  @media screen and (max-width: 767px) {
+    width: 210px;
+    height: 92px;
+    margin: 15px;
+  }
 
   &:hover,
   &:focus {

@@ -1,9 +1,17 @@
 .form-box {
-  width: 570px;
-  margin-top: 12px;
-  margin-left: 93px;
+  @media screen and (max-width: 767px) {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+  // width: 570px;
+  // margin-top: 12px;
+  // margin-left: 93px;
 }
 .form-box-title {
+  @media screen and (max-width: 767px) {
+    text-align: center;
+  }
   margin-bottom: 20px;
   font-weight: 700;
   font-size: 14px;
@@ -14,11 +22,19 @@
 }
 
 .form-field {
-  display: flex;
+  @media screen and (min-width: 768px) {
+    display: flex;
+  }
 }
 .signup-form__input {
+  @media screen and (max-width: 767px) {
+    width: 450px;
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+
   margin-right: 12px;
-  padding: 15px 295px 15px 16px;
+  padding: 15px 0px 15px 16px;
   width: 358px;
   border: 1px solid rgba(255, 255, 255, 0.3);
   font: inherit;
@@ -35,6 +51,11 @@
   @extend %button;
 
   padding: 10px 28px;
+
+  @media screen and (max-width: 767px) {
+    margin-left: auto;
+    margin-right: auto;
+  }
   /* transition: background-color 250ms var(--timing-function); */
 }
 

@@ -1,19 +1,26 @@
 .features-list {
   @extend %list;
-  display: flex;
-  justify-content: space-between;
+  // display: flex;
+  // justify-content: space-between;
 }
 .features-list__item {
-  width: 270px;
-  margin-right: 30px;
-
-  &:last-child {
-    margin-right: 0;
+  @media screen and (max-width: 767px) {
+    width: 450px;
   }
+  // width: 270px;
+  // margin-right: 30px;
+
+  // &:last-child {
+  //   margin-right: 0;
+  // }
 }
 
 .features-list__wrapper {
   @include centeredFlex;
+
+  @media screen and (max-width: 767px) {
+    width: 450px;
+  }
 
   width: 270px;
   height: 120px;
@@ -28,11 +35,16 @@
 .features-list__title {
   @extend %title;
 
+  @media screen and (max-width: 767px) {
+    text-align: center;
+  }
+
   margin-bottom: 10px;
   font-size: 14px;
   line-height: 1.14;
   text-transform: uppercase;
 }
+
 .features-list__text {
   margin-top: 0;
   color: $secondaryTextColor;
