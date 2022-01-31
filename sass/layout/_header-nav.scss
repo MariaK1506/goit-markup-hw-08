@@ -12,7 +12,6 @@
 
     padding-top: 16px;
     padding-bottom: 16px;
-    padding-left: 15px;
   }
 }
 
@@ -199,10 +198,12 @@
 
 .is-open .icon-cross {
   display: block;
+  transition: fill $timingFunction;
 }
 
 .is-open .icon-menuburger {
   display: none;
+  transition: fill $timingFunction;
 }
 
 .menu-container {
@@ -257,21 +258,6 @@
   color: $accentColor;
 }
 
-// .social-nav__link {
-//   &:not(:last-child) {
-//     &::after {
-//       content: "";
-//       width: 22px;
-//       height: 0px;
-//       // background-color: #303030;
-//       margin-right: 10px;
-//       margin-left: 10px;
-//       border: 1px solid rgba(33, 33, 33, 0.2);
-//       transform: rotate(90deg);
-//     }
-//   }
-// }
-
 .social-nav__link::before {
   content: "";
   width: 22px;
@@ -282,14 +268,3 @@
   border: 1px solid rgba(33, 33, 33, 0.2);
   transform: rotate(90deg);
 }
-
-// .social-nav__link:not(:last-child):after {
-//   content: "";
-//   width: 22px;
-//   height: 0px;
-//   // background-color: #303030;
-//   margin-right: 10px;
-//   margin-left: 10px;
-//   border: 1px solid rgba(33, 33, 33, 0.2);
-//   transform: rotate(90deg);
-// }
