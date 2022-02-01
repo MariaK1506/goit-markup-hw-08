@@ -6,6 +6,11 @@
     flex-wrap: wrap;
     align-items: center;
   }
+  @media screen and (min-width: 768px) {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
 }
 
 .address-box__text {
@@ -36,7 +41,7 @@
     margin-bottom: 0;
     transition: color $timingFunction;
   }
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: 1199px) {
     &:last-child {
       margin-bottom: 60px;
     }
@@ -73,6 +78,11 @@
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: $backgroundColor;
+
+  @media screen and (min-width: 768px) {
+    margin-top: 10px;
+    text-align: center;
+  }
 }
 
 .social-links-footer {
