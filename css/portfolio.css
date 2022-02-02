@@ -539,6 +539,21 @@ button {
   }
 }
 
+@media screen and (min-width: 768px) {
+  .projects-lists {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-bottom: 30px;
+  }
+}
+
 .projects-lists__button {
   cursor: pointer;
   padding: 6px 22px;
@@ -575,7 +590,7 @@ button {
   margin: 8px;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 1199px) {
   .projects-lists__item {
     margin: 4px;
   }
@@ -598,7 +613,6 @@ button {
 
 .projects-cards__link {
   display: block;
-  width: 370px;
   -webkit-transition: -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -613,6 +627,7 @@ button {
 @media screen and (max-width: 767px) {
   .projects-cards__link:not(:last-child) {
     margin-bottom: 30px;
+    width: 450px;
   }
 }
 
@@ -621,22 +636,24 @@ button {
     -ms-flex-preferred-size: calc((100% - 4 * 15px) / 2);
         flex-basis: calc((100% - 4 * 15px) / 2);
     margin: 15px;
+    width: 354px;
+    height: 440px;
   }
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 768px) and (min-width: 1200px) {
   .projects-cards__link {
     -ms-flex-preferred-size: calc((100% - 6 * 15px) / 3);
         flex-basis: calc((100% - 6 * 15px) / 3);
   }
 }
 
-.projects-cards__thumb {
+.projects-cards__link .projects-cards__thumb {
   position: relative;
   overflow: hidden;
 }
 
-.projects-cards__overlay {
+.projects-cards__link .projects-cards__overlay {
   position: absolute;
   bottom: 0;
   left: 0;
@@ -657,17 +674,22 @@ button {
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), transform 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.projects-cards__link:hover .projects-cards__overlay,
-.projects-cards__link:focus .projects-cards__overlay {
+.projects-cards__link:hover .projects-cards__link .projects-cards__overlay,
+.projects-cards__link:focus .projects-cards__link .projects-cards__overlay {
   opacity: 1;
   -webkit-transform: translateY(0);
           transform: translateY(0);
 }
 
-.projects-cards__content {
-  width: 370px;
+.projects-cards__link .projects-cards__content {
   padding: 20px 24px;
   border: 1px solid #eeeeee;
+}
+
+@media screen and (min-width: 768px) {
+  .projects-cards__link .projects-cards__content {
+    height: 146px;
+  }
 }
 
 .projects-cards__title {
@@ -683,6 +705,12 @@ button {
   color: #757575;
   font-size: 16px;
   line-height: 1.87;
+}
+
+@media screen and (min-width: 768px) {
+  .projects-cards__text:nth-child(1) {
+    margin-bottom: 56px;
+  }
 }
 
 .page-footer {

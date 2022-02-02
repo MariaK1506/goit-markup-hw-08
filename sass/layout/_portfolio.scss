@@ -7,6 +7,11 @@
     margin: -4px;
     margin-bottom: 40px;
   }
+
+  @media screen and (min-width: 768px) {
+    @include centeredFlex;
+    margin-bottom: 30px;
+  }
   // @include centeredFlex;
 
   // margin-bottom: 50px;
@@ -45,7 +50,7 @@
 }
 
 .projects-lists__item {
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: 1199px) {
     margin: 4px;
   }
 
