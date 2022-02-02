@@ -644,7 +644,6 @@ button {
         flex-basis: calc((100% - 4 * 15px) / 2);
     margin: 15px;
     width: 354px;
-    height: 440px;
   }
 }
 
@@ -695,7 +694,13 @@ button {
 
 @media screen and (min-width: 768px) {
   .projects-cards__link .projects-cards__content {
-    height: 146px;
+    width: 354px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .projects-cards__link .projects-cards__content {
+    width: 370px;
   }
 }
 
@@ -712,12 +717,6 @@ button {
   color: #757575;
   font-size: 16px;
   line-height: 1.87;
-}
-
-@media screen and (min-width: 768px) {
-  .projects-cards__text:nth-child(1) {
-    margin-bottom: 56px;
-  }
 }
 
 .page-footer {
