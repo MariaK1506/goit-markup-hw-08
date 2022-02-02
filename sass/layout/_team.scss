@@ -6,11 +6,11 @@
     flex-wrap: wrap;
     margin: -15px;
   }
-  // @media screen and (min-width: 1200px) {
-  //   // margin-left: -30px;
-  // }
-  // display: flex;
-  // flex-wrap: wrap;
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    flex-wrap: nowrap;
+    margin: -15px;
+  }
 }
 
 .team-list__item {
@@ -32,6 +32,7 @@
 
   @media screen and (min-width: 1200px) {
     flex-basis: calc((100% - 8 * 15px) / 4);
+    width: 270px;
   }
 }
 
@@ -59,10 +60,6 @@
   @include flex;
   @extend %list;
   justify-content: space-between;
-
-  // margin-bottom: 30px;
-  // margin-right: 32px;
-  // margin-left: 32px;
   width: 206px;
   height: 44px;
 
@@ -76,6 +73,11 @@
     margin-bottom: 24px;
     margin-right: 74px;
     margin-left: 74px;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 30px;
+    margin-right: 32px;
+    margin-left: 32px;
   }
 }
 

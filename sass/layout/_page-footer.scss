@@ -15,8 +15,9 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-
-    // justify-content: flex-start;
-    // align-items: flex-start;
+  }
+  @media screen and (min-width: 1200px) {
+    justify-content: flex-start;
+    align-items: flex-start;
   }
 }

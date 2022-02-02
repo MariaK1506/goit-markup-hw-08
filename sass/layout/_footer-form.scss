@@ -7,10 +7,13 @@
   @media screen and (min-width: 768px) {
     width: 450px;
   }
-  // width: 570px;
-  // margin-top: 12px;
-  // margin-left: 93px;
+  @media screen and (min-width: 1120px) {
+    width: 570px;
+    margin-left: 93px;
+    margin-top: 10px;
+  }
 }
+
 .form-box-title {
   @media screen and (max-width: 1199px) {
     text-align: center;
@@ -25,9 +28,7 @@
 }
 
 .form-field {
-  // @media screen and (min-width: 768px) {
-  //   display: flex;
-  // }
+  display: flex;
 }
 .signup-form__input {
   @media screen and (max-width: 767px) {
@@ -36,7 +37,7 @@
     margin-bottom: 20px;
   }
 
-  @media screen and (min-width: 768px) {
+  @media screen and (max-width: 1199px) {
     width: 100%;
     margin-bottom: 20px;
   }
@@ -69,6 +70,5 @@
 
 .signup-form__icon {
   @extend %icon;
-
   margin: auto;
 }

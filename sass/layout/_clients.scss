@@ -7,14 +7,18 @@
     margin: -15px;
   }
 
-  // justify-content: space-between;
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    flex-wrap: nowrap;
+    margin: -15px;
+    justify-content: space-between;
+  }
 }
 
 .clients-list__link {
   @extend %link;
   @include centeredFlex;
 
-  // width: 170px;
   height: 92px;
   border: 1px solid $iconColor;
   border-radius: 4px;
@@ -24,14 +28,17 @@
   @media screen and (max-width: 767px) {
     flex-basis: calc((100% - 4 * 15px) / 2);
     width: 210px;
-    height: 92px;
     margin: 15px;
   }
 
   @media screen and (min-width: 768px) {
     flex-basis: calc((100% - 6 * 15px) / 3);
     width: 226px;
-    height: 92px;
+    margin: 15px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 170px;
     margin: 15px;
   }
 

@@ -1,10 +1,8 @@
 .logo {
   font-family: $secondaryFontFamily;
-  // font-size: 26px;
   font-size: 24px;
   font-weight: 700;
   line-height: 1.17;
-  // line-height: 1.19;
   text-decoration: none;
 
   @media screen and (min-width: 1200px) {
@@ -23,16 +21,14 @@
 
 .page-footer__logo {
   color: $backgroundColor;
+  display: block;
+  margin-bottom: 20px;
 
   @media screen and (max-width: 767px) {
-    display: block;
     margin-right: 163px;
     margin-left: 163px;
-    margin-bottom: 20px;
   }
 
   @media screen and (min-width: 768px) {
-    display: block;
-    margin-bottom: 20px;
   }
 }
