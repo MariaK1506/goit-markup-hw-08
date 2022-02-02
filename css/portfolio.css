@@ -635,9 +635,6 @@ button {
   .projects-cards__link {
     width: 450px;
   }
-  .projects-cards__link:not(:last-child) {
-    margin-bottom: 30px;
-  }
 }
 
 @media screen and (min-width: 768px) {
@@ -652,6 +649,12 @@ button {
   .projects-cards__link {
     -ms-flex-preferred-size: calc((100% - 6 * 15px) / 3);
         flex-basis: calc((100% - 6 * 15px) / 3);
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .projects-cards__item:not(:last-child) {
+    margin-bottom: 30px;
   }
 }
 
@@ -964,10 +967,12 @@ button {
   }
 }
 
-.form-field {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+@media screen and (min-width: 1200px) {
+  .form-field {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
 }
 
 .signup-form__input {
@@ -992,10 +997,16 @@ button {
   }
 }
 
-@media screen and (max-width: 1199px) {
+@media screen and (min-width: 768px) {
   .signup-form__input {
     width: 100%;
     margin-bottom: 20px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .signup-form__input {
+    margin-bottom: 0;
   }
 }
 
