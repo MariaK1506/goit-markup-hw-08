@@ -157,6 +157,12 @@
   }
 }
 
+.contact-nav__link--tel {
+  @media screen and (max-width: 767px) {
+    color: $accentColor;
+    font-size: 34px;
+  }
+}
 .contact-nav__icon {
   @extend %icon;
   margin-right: 8px;
@@ -203,15 +209,18 @@
 .menu-container {
   display: flex;
   align-items: center;
-  width: 100%;
-  z-index: 999;
+  flex-direction: column;
+  z-index: 5;
 
   @media screen and (max-width: 767px) {
-    display: none;
-    position: absolute;
-    top: 100%;
+    position: fixed;
+    top: 0;
     left: 0;
-    height: 796px;
+    width: 100vw;
+    height: 100vh;
+
+    display: none;
+
     background-color: #ffffff;
     text-align: center;
     padding-top: 48px;
@@ -257,11 +266,10 @@
   color: $accentColor;
 }
 
-.social-nav__link::before {
+.social-nav__item:not(:nth-child(1)) .social-nav__link::before {
   content: "";
   width: 22px;
   height: 0px;
-  // background-color: #303030;
   margin-right: 10px;
   margin-left: 10px;
   border: 1px solid rgba(33, 33, 33, 0.2);

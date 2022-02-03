@@ -92,7 +92,7 @@
   transition: fill $timingFunction;
 
   .modal-form__input:hover + &,
-  .modal-form__input:hover + & {
+  .modal-form__input:focus + & {
     fill: $accentColor;
   }
 }
@@ -105,6 +105,7 @@
   letter-spacing: 0.01em;
   color: #757575;
 }
+
 .modal-form__input {
   margin: 0;
   padding-left: 42px;
