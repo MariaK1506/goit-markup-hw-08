@@ -258,9 +258,6 @@ button {
   .main-nav__item {
     margin-bottom: 32px;
   }
-  .main-nav__item:last-child {
-    margin-bottom: 302px;
-  }
 }
 
 @media screen and (min-width: 768px) {
@@ -463,10 +460,6 @@ button {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  z-index: 5;
 }
 
 @media screen and (max-width: 767px) {
@@ -477,12 +470,10 @@ button {
     width: 100vw;
     height: 100vh;
     display: none;
+    z-index: 5;
     background-color: #ffffff;
     text-align: center;
-    padding-top: 48px;
-    padding-bottom: 48px;
-    padding-right: 40px;
-    padding-left: 40px;
+    padding: 48px 40px;
     -webkit-box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08), 0px 1px 3px rgba(0, 0, 0, 0.16);
             box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08), 0px 1px 3px rgba(0, 0, 0, 0.16);
   }
@@ -546,6 +537,52 @@ button {
   border: 1px solid rgba(33, 33, 33, 0.2);
   -webkit-transform: rotate(90deg);
           transform: rotate(90deg);
+}
+
+@media screen and (max-width: 767px) {
+  .menu-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    height: 100%;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .menu-wrapper {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .menu-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
 }
 
 @media screen and (max-width: 767px) {
