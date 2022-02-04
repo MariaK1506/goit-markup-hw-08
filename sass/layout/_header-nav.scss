@@ -181,6 +181,7 @@
   padding: 0;
   border: none;
   background-color: transparent;
+  z-index: 5;
 
   @media screen and (min-width: 768px) {
     display: none;
@@ -226,7 +227,7 @@
     text-align: center;
     padding-top: 48px;
     padding-bottom: 48px;
-    padding-right: 83px;
+    padding-right: 40px;
     padding-left: 40px;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08),
       0px 1px 3px rgba(0, 0, 0, 0.16);
@@ -234,6 +235,10 @@
     &.is-open {
       display: block;
     }
+    // &.is-open .menu-button {
+    //   position: absolute;
+    //   z-index: 99;
+    // }
   }
   @media screen and (min-width: 1200px) {
     display: flex;
