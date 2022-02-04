@@ -181,7 +181,7 @@
   padding: 0;
   border: none;
   background-color: transparent;
-  z-index: 5;
+  z-index: 99;
 
   @media screen and (min-width: 768px) {
     display: none;
