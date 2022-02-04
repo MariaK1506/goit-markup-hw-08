@@ -1,5 +1,6 @@
 .modal {
   position: relative;
+
   // top: 50%;
   // left: 50%;
   // transform: translate(-50%, -50%) scale(1);
@@ -47,9 +48,9 @@
   &:hover {
     color: $accentColor;
   }
-  @media screen and (min-width: 768px) {
-    position: absolute;
-  }
+  // @media screen and (min-width: 768px) {
+  //   position: absolute;
+  // }
 }
 
 .modal__icon {

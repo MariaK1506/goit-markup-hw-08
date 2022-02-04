@@ -193,16 +193,21 @@
   }
 }
 
+.menu-button.is-open {
+  position: fixed;
+  right: 50px;
+}
+
 .icon-cross {
   display: none;
 }
 
-.is-open .icon-cross {
+.menu-button.is-open .icon-cross {
   display: block;
   transition: fill $timingFunction;
 }
 
-.is-open .icon-menuburger {
+.menu-button.is-open .icon-menuburger {
   display: none;
   transition: fill $timingFunction;
 }
@@ -210,6 +215,7 @@
 .menu-container {
   display: flex;
   align-items: center;
+  // flex-grow: 1;
 
   // flex-direction: column;
   z-index: 5;
@@ -220,7 +226,6 @@
     left: 0;
     width: 100vw;
     height: 100vh;
-
     display: none;
 
     background-color: #ffffff;
