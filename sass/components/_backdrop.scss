@@ -11,10 +11,6 @@
   opacity: 1;
   transition: opacity $timingFunction, visibility $timingFunction;
   overflow-y: scroll;
-
-  // @media screen and (min-width: 768px) {
-  //   padding: 208px 159px;
-  // }
 }
 
 .is-hidden {

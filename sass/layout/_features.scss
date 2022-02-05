@@ -1,13 +1,13 @@
 .features-list {
   @extend %list;
 
-  @media screen and (min-width: 768px) {
+  @include tablet {
     display: flex;
     flex-wrap: wrap;
     margin: -15px;
   }
 
-  @media screen and (min-width: 1200px) {
+  @include desktop {
     display: flex;
     justify-content: space-between;
     flex-wrap: nowrap;
@@ -23,13 +23,13 @@
     }
   }
 
-  @media screen and (min-width: 768px) {
+  @include tablet {
     flex-basis: calc((100% - 4 * 15px) / 2);
     margin: 15px;
   }
 }
 
-@media screen and (min-width: 1200px) {
+@include desktop {
   flex-basis: calc((100% - 8 * 15px) / 4);
   margin: 15px;
 }
@@ -47,11 +47,11 @@
     width: 450px;
   }
 
-  @media screen and (min-width: 768px) {
+  @include tablet {
     width: 354px;
   }
 
-  @media screen and (min-width: 1200px) {
+  @include desktop {
     width: 270px;
   }
 }

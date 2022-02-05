@@ -8,12 +8,12 @@
     margin-bottom: 40px;
   }
 
-  @media screen and (min-width: 768px) {
+  @include tablet {
     @include centeredFlex;
     margin-bottom: 30px;
   }
 
-  @media screen and (min-width: 1120px) {
+  @include desktop {
     margin-bottom: 34px;
   }
 }
@@ -52,7 +52,4 @@
 
 .projects-lists__item {
   margin: 4px;
-  // @media screen and (max-width: 1199px) {
-  //   margin: 4px;
-  // }
 }

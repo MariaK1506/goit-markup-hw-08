@@ -298,6 +298,9 @@ button {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
     margin-left: auto;
   }
 }
@@ -332,7 +335,6 @@ button {
 
 @media screen and (min-width: 768px) {
   .contact-nav__link {
-    color: #757575;
     font-weight: 500;
     font-size: 12px;
     line-height: 1.17;
@@ -1081,15 +1083,15 @@ button {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
   }
 }
 
@@ -1262,7 +1264,7 @@ button {
   }
 }
 
-@media screen and (min-width: 1120px) {
+@media screen and (min-width: 1200px) {
   .form-box {
     width: 570px;
     margin-left: 93px;

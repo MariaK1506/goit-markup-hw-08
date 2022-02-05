@@ -9,14 +9,14 @@
 
   transition: transform $timingFunction;
 
-  @media screen and (min-width: 768px) {
+  @include tablet {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%) scale(1);
     width: 450px;
   }
-  @media screen and (min-width: 1200px) {
+  @include desktop {
     width: 528px;
   }
 }
@@ -44,9 +44,6 @@
   &:hover {
     color: $accentColor;
   }
-  // @media screen and (min-width: 768px) {
-  //   position: absolute;
-  // }
 }
 
 .modal__icon {
@@ -143,17 +140,17 @@
 
 .checkbox {
   @include flex;
-  @media screen and (max-width: 1199px) {
-    font-size: 12px;
-    line-height: 1.17;
-    letter-spacing: 0.03em;
-  }
-
   margin-bottom: 30px;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: $secondaryTextColor;
+
+  @media screen and (max-width: 1199px) {
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+  }
 }
 .checkbox__input {
   appearance: none;

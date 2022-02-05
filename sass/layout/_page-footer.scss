@@ -7,16 +7,12 @@
 }
 
 .footer-inner {
-  // @media screen and (max-width: 767px) {
-  //   display: flex;
-  //   flex-wrap: wrap;
-  // }
-  @media screen and (min-width: 768px) {
+  @include tablet {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
   }
-  @media screen and (min-width: 1200px) {
+  @include desktop {
     justify-content: flex-start;
     align-items: flex-start;
   }
